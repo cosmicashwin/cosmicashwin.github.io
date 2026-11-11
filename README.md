@@ -36,10 +36,21 @@ The Vite `base` is `/` because this is a user Pages site. For a project site und
 - Update page metadata in `index.html` and the icon in `public/favicon.svg`.
 - Memes links to `https://github.com/cosmicashwin/memes`.
 - Vision Cursor links to `https://github.com/cosmicashwin/vision--cursor` (two hyphens).
-- The only confirmed social link is GitHub. “More about me · Coming soon” and “Contact details & social links · Coming soon” are intentional, visibly marked placeholders. Replace them with approved details or remove them. No email address or other social account is assumed.
+- Contact details are configured in `src/profile.js`: email `ashwinkaushik100@gmail.com` and Discord handle `cosmicashwin`. “More about me · Coming soon” remains a biography placeholder.
 
 The artwork is decorative CSS and inline SVG, not actual project screenshots. Fonts load from Google Fonts with local sans-serif fallbacks, so the site remains usable without that service. There are no analytics, forms, or backend services.
 
 ## Accessibility
 
 Includes semantic landmarks, a skip link, visible keyboard focus, meaningful repository link labels, decorative artwork hidden from assistive technology, responsive layouts, and reduced-motion support. Navigation uses native in-page links; contact links open in the same tab.
+
+## Live Discord card
+
+The contact card uses the public [Lanyard API](https://github.com/Phineas/lanyard) to retrieve the current Discord avatar, presence, custom status, shared activity, and Spotify listening details.
+
+1. Enable Developer Mode in Discord Settings → Advanced, then right-click your profile → Copy User ID.
+2. Set `discordId` in `src/profile.js` to that numeric ID as a **string**.
+3. Join the [Lanyard Discord server](https://discord.gg/lanyard) with that account and remain a member so Lanyard can observe your presence.
+4. Build and deploy. No API key, Discord token, or backend is required.
+
+The card refreshes every 30 seconds while the page is visible and immediately when it becomes visible again. Requests time out after 10 seconds. Missing configuration or service failures show an unavailable state rather than inventing an online/offline status. Invisible presence is indistinguishable from offline; activities only appear if Discord shares them. A failed avatar falls back to initials. Browser requests go directly to Lanyard and the Discord image CDN.

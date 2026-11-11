@@ -1,6 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
+import DiscordCard from "./DiscordCard";
+import { profile } from "./profile";
 
 const github = "https://github.com/cosmicashwin";
 
@@ -213,18 +215,18 @@ function App() {
             <h2 id="contact-title">
               Crossing <span className="serif">orbits?</span>
             </h2>
-            <p>Find me on GitHub and explore what’s here.</p>
-            <a className="button" href={github}>
-              @cosmicashwin <Arrow />
+            <p>Say hello by email, or find me in my Discord orbit.</p>
+            <a className="contact-email" href={`mailto:${profile.email}`}>
+              {profile.email} <Arrow />
             </a>
+            <div className="contact-links">
+              <a className="button" href={github}>
+                GitHub <Arrow />
+              </a>
+              <span>Discord · @{profile.discordHandle}</span>
+            </div>
           </div>
-          <div className="contact-note">
-            <span aria-hidden="true">✳</span>
-            <p>More ways to connect</p>
-            <span className="placeholder">
-              Contact details & social links · Coming soon
-            </span>
-          </div>
+          <DiscordCard />
         </section>
       </main>
       <footer className="shell">
