@@ -203,6 +203,43 @@ function App() {
                 </span>
               </div>
             </a>
+                                    <a
+              className="project-card"
+              href={`${github}/profile-picture-s-`}
+              aria-label="Profile Picture S — view repository on GitHub"
+            >
+              <div className="project-art cursor-art" aria-hidden="true">
+                <span className="art-index">EXPERIMENT / 003</span>
+                <div className="cursor-grid" />
+                <svg className="cursor cursor-white" viewBox="0 0 100 140">
+                  <path d="M15 8 88 84 56 86 73 125 52 134 35 94 12 117Z" />
+                </svg>
+                <svg className="cursor cursor-black" viewBox="0 0 100 140">
+                  <path d="M15 8 88 84 56 86 73 125 52 134 35 94 12 117Z" />
+                </svg>
+                <span className="variant-label">
+                  PROFILE PICTURE
+                </span>
+                <span className="variant-dots">● ◐</span>
+              </div>
+
+              <div className="project-info">
+                <div className="project-meta">
+                  <span>PROFILE PICTURE</span>
+                  <Arrow />
+                </div>
+
+                <h3>Profile Picture S</h3>
+
+                <p>
+                  My profile picture project, available on GitHub.
+                </p>
+
+                <span className="project-cta">
+                  Explore repository <Arrow />
+                </span>
+              </div>
+            </a>
           </div>
         </section>
         <section
