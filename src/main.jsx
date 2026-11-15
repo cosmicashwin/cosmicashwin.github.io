@@ -186,7 +186,7 @@ function App() {
                 <span className="variant-label">
                   TWO SHADES. A NEW POINT OF VIEW.
                 </span>
-                <span className="variant-dots">● ◐</span>
+                <span className="variant-dots">PFPS</span>
               </div>
               <div className="project-info">
                 <div className="project-meta">
