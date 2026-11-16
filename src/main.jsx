@@ -184,9 +184,9 @@ function App() {
                   <path d="M15 8 88 84 56 86 73 125 52 134 35 94 12 117Z" />
                 </svg>
                 <span className="variant-label">
-                    PFPS
+                    cursor 
                 </span>
-                <span className="variant-dots">PFPS</span>
+                <span className="variant-dots">cursor</span>
               </div>
               <div className="project-info">
                 <div className="project-meta">
