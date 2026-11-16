@@ -210,15 +210,11 @@ function App() {
             >
               <div className="project-art cursor-art" aria-hidden="true">
   <span className="art-index">EXPERIMENT / 003</span>
-
-  <div className="cursor-grid" />
-
   <div className="pfps-text">PFPS</div>
   <div className="pfps-text">PFPS</div>
 
   <span className="variant-label">PROFILE PICTURE</span>
-  <span className="variant-dots">PFPS</span>
-</div>
+    </div>
 
               <div className="project-info">
                 <div className="project-meta">
