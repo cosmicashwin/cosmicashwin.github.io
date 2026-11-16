@@ -210,8 +210,11 @@ function App() {
             >
               <div className="project-art cursor-art" aria-hidden="true">
   <span className="art-index">EXPERIMENT / 003</span>
-  <div className="pfps-text">PFPS</div>
-  <div className="pfps-text">PFPS</div>
+<img
+  className="project-image"
+  src="/goku.jpg"
+  alt="Goku"
+/>
 
   <span className="variant-label">PROFILE PICTURE</span>
     </div>
