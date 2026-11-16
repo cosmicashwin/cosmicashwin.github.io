@@ -209,19 +209,16 @@ function App() {
               aria-label="Profile Picture S — view repository on GitHub"
             >
               <div className="project-art cursor-art" aria-hidden="true">
-                <span className="art-index">EXPERIMENT / 003</span>
-                <div className="cursor-grid" />
-                <svg className="cursor cursor-white" viewBox="0 0 100 140">
-                  <path d="M15 8 88 84 56 86 73 125 52 134 35 94 12 117Z" />
-                </svg>
-                <svg className="cursor cursor-black" viewBox="0 0 100 140">
-                  <path d="M15 8 88 84 56 86 73 125 52 134 35 94 12 117Z" />
-                </svg>
-                <span className="variant-label">
-                  PROFILE PICTURE
-                </span>
-                <span className="variant-dots">● ◐</span>
-              </div>
+  <span className="art-index">EXPERIMENT / 003</span>
+
+  <div className="cursor-grid" />
+
+  <div className="pfps-text">PFPS</div>
+  <div className="pfps-text">PFPS</div>
+
+  <span className="variant-label">PROFILE PICTURE</span>
+  <span className="variant-dots">PFPS</span>
+</div>
 
               <div className="project-info">
                 <div className="project-meta">
